@@ -1,61 +1,40 @@
-const navs = document.querySelectorAll('.nav-list li');
-const cube = document.querySelector('.box');
-const sections = document.querySelectorAll('.section');
+ // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
 
-const resumeLists = document.querySelectorAll('.resume-list');
-const resumeBoxs = document.querySelectorAll('.resume-box');
-
-const portfolioLists = document.querySelectorAll('.portfolio-list');
-const portfolioBoxs = document.querySelectorAll('.portfolio-box');
-
-// navbar actions and all section actions along with code rotation when navbar is clicked
-navs.forEach((nav, idx) => {
-    nav.addEventListener('click', () => {
-        document.querySelector('.nav-list li.active').classList.remove('active');
-        nav.classList.add('active');
-
-        cube.style.transform = `rotateY(${idx * -90}deg)`;
-
-        document.querySelector('.section.active').classList.remove('active');
-        sections[idx].classList.add('active');
-
-        const array = Array.from(sections);
-        const arrSecs = array.slice(1, -1); //only requires indexes 1,2,3 or does not require start and end indexes
-        arrSecs.forEach(arrSec => {
-            if(arrSec.classList.contains('active')){
-                sections[4].classList.add('action-contact');
-            }
-        });
-        if (sections[0].classList.contains('active')){
-            sections[4].classList.remove('action-contact');
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger sibling reveals
+          const siblings = entry.target.parentElement.querySelectorAll('.reveal');
+          let delay = 0;
+          siblings.forEach((sib, idx) => {
+            if (sib === entry.target) delay = idx * 80;
+          });
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+          observer.unobserve(entry.target);
         }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+      });
     });
-});
-
-//resume section when clicking the tab-list
-resumeLists.forEach((list, idx) => {
-    list.addEventListener('click', () => {
-        document.querySelector('.resume-list.active').classList.remove('active');
-        list.classList.add('active');
-
-        document.querySelector('.resume-box.active').classList.remove('active');
-        resumeBoxs[idx].classList.add('active');
-    });
-});
-
-//portfolio section when clicking tablist
-portfolioLists.forEach((list, idx) => {
-    list.addEventListener('click', () => {
-        document.querySelector('.portfolio-list.active').classList.remove('active');
-        list.classList.add('active');
-
-        document.querySelector('.portfolio-box.active').classList.remove('active');
-        portfolioBoxs[idx].classList.add('active');
-    });
-});
-
-//visibility for contact section when you are reloading (cube reloading orietation)
-setTimeout(() => {
-    sections[4].classList.remove('active');
-}, 1500);
-   

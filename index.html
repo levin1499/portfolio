@@ -1,392 +1,489 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!--boxicons links-->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!--css file link-->
+    <title>Levin Mwange — Software Developer</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <!--navbar-->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li class="active">
-                <i class="bx bxs-home"></i>
-                <span class="tooltip">Home</span>
-            </li>
-            <li>
-                <i class="bx bxs-user"></i>
-                <span class="tooltip">About</span>
-            </li>
-            <li>
-                <i class="bx bxs-detail"></i>
-                <span class="tooltip">Resume</span>
-            </li>
-            <li>
-                <i class="bx bxs-briefcase"></i>
-                <span class="tooltip">Portfolio</span>
-            </li>
-            <li>
-                <i class="bx bxs-envelope-open"></i>
-                <span class="tooltip">Contact</span>
-            </li>
-        </ul>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="logo">LM<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </nav>
 
-    <div class="container">
-        <div class="box">
-            <!--home section-->
-            <section class="section home active">
-                <div class="home-info">
-                    <h3>Hello I'm</h3>
-                    <h1>Levin Mwange</h1>
-                    <h3>Software Developer</h3>
-                    <p class="desc">
-                        A esteamed developer equiped with necessary skills to help solve a
-                        problem
-                    </p>
-                    <div class="btn-sci">
-                        <a href="#" class="btn">Download CV</a>
-                        <div class="sci">
-                            <a href="">
-                                <i class="bx bxl-github"></i>
-                                <span class="tooltip">Github</span>
-                            </a>
-                            <a href="">
-                                <i class="bx bxl-linkedin"></i>
-                                <span class="tooltip">Linkedin</span>
-                            </a>
-                            <a href="">
-                                <i class="bx bxl-twitter"></i>
-                                <span class="tooltip">Twitter</span>
-                            </a>
-                            <a href="">
-                                <i class="bx bxl-facebook"></i>
-                                <span class="tooltip">Facebook</span>
-                            </a>
-                            <a href="">
-                                <i class="bx bxl-instagram"></i>
-                                <span class="tooltip">Instagram</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="img-wrapper">
-                    <div class="img-box home-img">
-                        <img src="images/2.jpg" alt="" />
-                    </div>
-                </div>
-            </section>
-            <!--about section-->
-            <section class="section about">
-                <div class="img-wrapper">
-                    <div class="img-box about-img">
-                        <img src="images/3.jpg" alt="" />
-                    </div>
-                </div>
-
-                <div class="about-info">
-                    <h2 class="title">About Me</h2>
-                    <h3>Software Developer!</h3>
-                    <p class="desc">
-                        a diligent, goal-oriented individual with a strong academic
-                        background in computer science and IT. You value both practical
-                        and theoretical knowledge, as demonstrated by your interests in
-                        network security and mobile app development. Your final year
-                        project involves creating a mobile app with React, highlighting
-                        your coding skills and interest in software development,
-                        particularly in user interaction and backend functionality.
-                    </p>
-                    <a href="#" class="btn">View More</a>
-                </div>
-            </section>
-            <!--resume(experience, skills, education) section-->
-            <section class="section resume">
-                <h2 class="title">Resume</h2>
-                <div class="tab-box">
-                    <div class="tab-list resume-list active">
-                        <h3>Experience</h3>
-                    </div>
-                    <div class="tab-list resume-list">
-                        <h3>Skills</h3>
-                    </div>
-                    <div class="tab-list resume-list">
-                        <h3>Education</h3>
-                    </div>
-                </div>
-
-                <div class="tab-wrapper">
-                    <div class="tab-grid resume-box experience active">
-                        <div class="tab-item resume-item">
-                            <h4>2023 - present</h4>
-                            <h4>Frontend Developer</h4>
-                            <h4>CompuTech</h4>
-                            <p>
-                                a diligent, goal-oriented individual with a strong academic
-                                background in computer science and IT. You value both
-                                practical and theoretical knowledge, as demonstrated by your
-                                interests in network security and mobile app development.
-                            </p>
-                        </div>
-                        <div class="tab-item resume-item">
-                            <h4>2023 - present</h4>
-                            <h4>Frontend Developer</h4>
-                            <h4>CompuTech</h4>
-                            <p>
-                                a diligent, goal-oriented individual with a strong academic
-                                background in computer science and IT. You value both
-                                practical and theoretical knowledge, as demonstrated by your
-                                interests in network security and mobile app development.
-                            </p>
-                        </div>
-
-                        <div class="tab-item resume-item">
-                            <h4>2022 - 2023</h4>
-                            <h4>Attachee</h4>
-                            <h4>Kipchekwen CYDC</h4>
-                            <p>
-                                a diligent, goal-oriented individual with a strong academic
-                                background in computer science and IT. You value both
-                                practical and theoretical knowledge, as demonstrated by your
-                                interests in network security and mobile app development.
-                            </p>
-                        </div>
-
-                        <div class="tab-item resume-item">
-                            <h4>2023 - present</h4>
-                            <h4>Frontend Developer</h4>
-                            <h4>CompuTech</h4>
-                            <p>
-                                a diligent, goal-oriented individual with a strong academic
-                                background in computer science and IT. You value both
-                                practical and theoretical knowledge, as demonstrated by your
-                                interests in network security and mobile app development.
-                            </p>
-                        </div>
-
-
-                    </div>
-
-                    <div class="tab-grid resume-box skills">
-                        <div class="tab-item resume-item">
-                            <i class='bx bxl-html5'></i>
-                            <p>HTML</p>
-                        </div>
-
-                        <div class="tab-item resume-item">
-                            <i class='bx bxl-css3'></i>
-                            <p>CSS</p>
-                        </div>
-
-                        <div class="tab-item resume-item">
-                            <i class='bx bxl-javascript'></i>
-                            <p>JAVASCRIPT</p>
-                        </div>
-
-                    </div>
-
-                    <div class="tab-grid resume-box education">
-                        <div class="tab-item resume-item">
-                            <h4>2020-2024</h4>
-                            <h4>Bachelors of Computer Science And Information Technolgy</h4>
-                            <h4>The East African University</h4>
-                        </div>
-                        <div class="tab-item resume-item">
-                            <h4>2023 July-October</h4>
-                            <h4>Web Developement Bootcamp</h4>
-                            <h4>Moringa School</h4>
-                        </div>
-                        <div class="tab-item resume-item">
-                            <h4>2024 September-Present</h4>
-                            <h4>Junior Developer</h4>
-                            <h4>W3Schools</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--portfolio(work service) section-->
-            <section class="section portfolio">
-                <h2 class="title">Portfolio</h2>
-                <div class="tab-box">
-                    <div class="tab-list portfolio-list active">
-                        <h3>My Work</h3>
-                    </div>
-                    <div class="tab-list portfolio-list">
-                        <h3>My Service</h3>
-                    </div>
-                </div>
-                <div class="tab-wrapper">
-                    <div class="tab-grid portfolio-box work active">
-                        <div class="tab-item portfolio-item">
-                            <div class="work-img">
-                                <img src="images/work 1 levin book.png" alt="">
-                            </div>
-                            <div class="work-info">
-                                <h4>Frontend Project</h4>
-                                <p>This project is a website developed using HTML , CSS and JavaScript. 
-                                    It showcases works of a mordern day five star hotel</p>
-                                <div class="tech-used">
-                                    <p>HTML5, CSS3, JAVASCRIPT</p>
-                                </div>
-                                <div class="portfolio-icon work-icon">
-                                    <a href="#">
-                                        <i class='bx bx-right-arrow-alt' ></i>
-                                        <span class="tooltip">Preview</span>
-                                    </a>
-                                    <a href="#">
-                                        <i class='bx bxl-github' ></i>
-                                        <span class="tooltip">Github Repository</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-item portfolio-item">
-                            <div class="work-img">
-                                <img src="images/work 3 golden gates hotel.png" alt="">
-                            </div>
-                            <div class="work-info">
-                                <h4>Frontend Project</h4>
-                                <p>This project is a website developed using HTML , CSS and JavaScript. 
-                                    It showcases works of a mordern day five star hotel</p>
-                                <div class="tech-used">
-                                    <p>HTML5, CSS3, JAVASCRIPT</p>
-                                </div>
-                                <div class="portfolio-icon work-icon">
-                                    <a href="#">
-                                        <i class='bx bx-right-arrow-alt' ></i>
-                                        <span class="tooltip">Preview</span>
-                                    </a>
-                                    <a href="#">
-                                        <i class='bx bxl-github' ></i>
-                                        <span class="tooltip">Github Repository</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-item portfolio-item">
-                            <div class="work-img">
-                                <img src="images/work 5 levin arts.png" alt="">
-                            </div>
-                            <div class="work-info">
-                                <h4>Frontend Project</h4>
-                                <p>This project is a website developed using HTML , CSS and JavaScript. 
-                                    It showcases works of a mordern day five star hotel</p>
-                                <div class="tech-used">
-                                    <p>HTML5, CSS3, JAVASCRIPT</p>
-                                </div>
-                                <div class="portfolio-icon work-icon">
-                                    <a href="#">
-                                        <i class='bx bx-right-arrow-alt' ></i>
-                                        <span class="tooltip">Preview</span>
-                                    </a>
-                                    <a href="#">
-                                        <i class='bx bxl-github' ></i>
-                                        <span class="tooltip">Github Repository</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-item portfolio-item">
-                            <div class="work-img">
-                                <img src="images/work 2 hotel.png" alt="">
-                            </div>
-                            <div class="work-info">
-                                <h4>Frontend Project</h4>
-                                <p>This project is a website developed using HTML , CSS and JavaScript. 
-                                    It showcases works of a mordern day five star hotel</p>
-                                <div class="tech-used">
-                                    <p>HTML5, CSS3, JAVASCRIPT</p>
-                                </div>
-                                <div class="portfolio-icon work-icon">
-                                    <a href="#">
-                                        <i class='bx bx-right-arrow-alt' ></i>
-                                        <span class="tooltip">Preview</span>
-                                    </a>
-                                    <a href="#">
-                                        <i class='bx bxl-github' ></i>
-                                        <span class="tooltip">Github Repository</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-grid portfolio-box service">
-                        <div class="tab-item portfolio-item">
-                            <div class="portfolio-icon service-icon">
-                                <i class='bx bx-code-alt icon'></i>
-                                <a href="#"><i class='bx bx-arrow-back' ></i></a>
-                            </div>
-                            <h4>Web Developement</h4>
-                            <p>A esteamed developer equiped with necessary skills to help solve a
-                            problem</p>
-                        </div>
-
-                        <div class="tab-item portfolio-item">
-                            <div class="portfolio-icon service-icon">
-                                <i class='bx bx-palette icon' ></i>
-                                <a href="#"><i class='bx bx-arrow-back' ></i></a>
-                            </div>
-                            <h4>Web Design</h4>
-                            <p>A esteamed developer equiped with necessary skills to help solve a
-                            problem</p>
-                        </div>
-                        
-                        <div class="tab-item portfolio-item">
-                            <div class="portfolio-icon service-icon">
-                                <i class='bx bxs-video-recording icon' ></i>
-                                <a href="#"><i class='bx bx-arrow-back' ></i></a>
-                            </div>
-                            <h4>Video Editing</h4>
-                            <p>A esteamed developer equiped with necessary skills to help solve a
-                            problem</p>
-                        </div>
-
-                        <div class="tab-item portfolio-item">
-                            <div class="portfolio-icon service-icon">
-                                <i class='bx bxs-camera icon' ></i>
-                                <a href="#"><i class='bx bx-arrow-back' ></i></a>
-                            </div>
-                            <h4>Photography</h4>
-                            <p>A esteamed developer equiped with necessary skills to help solve a
-                            problem</p>
-                        </div>
-                </div>
-            </section>
-
-            <!--contact section-->
-            <section class="section contact active">
-                <h2 class="title">Contact</h2>
-                <div class="contact-wrapper">
-                    <form action="" class="contact-form">
-                        <h3>Let's Work Together</h3>
-                        <div class="field-box">
-                            <input type="text" placeholder="Full Name" required>
-                            <input type="email" placeholder="Email Address" required>
-                            <input type="text" placeholder="Phone Number" required>
-                            <input type="text" placeholder="Email Subject" required>
-                            <textarea name="" id="" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div class="contact-btn">
-                            <button type="submit" class="btn">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </section>
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-content">
+        <div class="hero-badge">Available for work</div>
+        <p class="hero-sub">Hello, I'm</p>
+        <h1 class="hero-name">Levin<span class="accent">Mwange</span></h1>
+        <div class="hero-role"><span>Software Developer</span></div>
+        <p class="hero-desc">
+          Goal-oriented developer crafting elegant digital experiences — from
+          pixel-perfect interfaces to solid backend architecture.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn-primary"
+            ><i class="bx bx-briefcase"></i> View My Work</a
+          >
+          <a href="#" class="btn-outline"
+            ><i class="bx bx-download"></i> Download CV</a
+          >
         </div>
-    </div>
+      </div>
 
-    <!--js file-->
-    <script src="script.js"></script>
-</body>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <div class="hero-img-inner">
+            <img src="images/2.jpg" alt="Levin Mwange" />
+          </div>
+          <div class="stat-card">
+            <i class="bx bx-code-alt"></i>
+            <div>
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Years exp.</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="bx bx-folder-open"></i>
+            <div>
+              <div class="stat-num">4+</div>
+              <div class="stat-label">Projects done</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="hero-socials">
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+        <a href=""><i class="bx bxl-twitter"></i></a>
+        <a href=""><i class="bx bxl-instagram"></i></a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-main">
+          <img src="images/3.jpg" alt="About Levin" />
+        </div>
+        <div class="about-img-accent">
+          <img src="images/2.jpg" alt="Levin" />
+        </div>
+        <div class="about-badge">Open to work</div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-eyebrow">About Me</div>
+        <h2 class="section-title">Building with<br /><span>purpose</span></h2>
+        <p>
+          I'm a diligent, goal-oriented developer with a strong academic
+          background in Computer Science and IT. I value both practical and
+          theoretical knowledge — demonstrated by my interests in network
+          security and mobile app development.
+        </p>
+        <p>
+          My final year project involves building a mobile app with React,
+          highlighting my passion for seamless user interaction and solid
+          backend functionality.
+        </p>
+        <div class="about-stats">
+          <div class="astat">
+            <div class="astat-num">2+</div>
+            <div class="astat-label">Years exp.</div>
+          </div>
+          <div class="astat">
+            <div class="astat-num">4+</div>
+            <div class="astat-label">Projects</div>
+          </div>
+          <div class="astat">
+            <div class="astat-num">3</div>
+            <div class="astat-label">Certifications</div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary"
+          ><i class="bx bx-download"></i> Download CV</a
+        >
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="skills-header reveal">
+        <div class="section-eyebrow">What I Know</div>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <i class="bx bxl-html5"></i>
+          <h4>HTML5</h4>
+          <p>
+            Semantic markup, accessibility, and structured web content
+            foundations.
+          </p>
+        </div>
+        <div class="skill-card reveal">
+          <i class="bx bxl-css3"></i>
+          <h4>CSS3</h4>
+          <p>
+            Modern layouts, animations, responsive design, and visual polish.
+          </p>
+        </div>
+        <div class="skill-card reveal">
+          <i class="bx bxl-javascript"></i>
+          <h4>JavaScript</h4>
+          <p>
+            Dynamic interactivity, DOM manipulation, and modern ES6+ features.
+          </p>
+        </div>
+        <div class="skill-card reveal">
+          <i class="bx bxl-react"></i>
+          <h4>React</h4>
+          <p>
+            Component-based UIs and mobile app development with React Native.
+          </p>
+        </div>
+        <div class="skill-card reveal">
+          <i class="bx bx-shield-quarter"></i>
+          <h4>Network Security</h4>
+          <p>
+            Understanding of secure architectures, protocols, and
+            vulnerabilities.
+          </p>
+        </div>
+        <div class="skill-card reveal">
+          <i class="bx bxl-git"></i>
+          <h4>Git & GitHub</h4>
+          <p>
+            Version control, branching strategies, and collaborative
+            development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="exp-sticky reveal">
+        <div class="section-eyebrow">Career Path</div>
+        <h2 class="section-title">Work<br /><span>Experience</span></h2>
+        <p
+          style="
+            font-size: 1.6rem;
+            color: var(--muted2);
+            line-height: 1.8;
+            margin-top: 2rem;
+          "
+        >
+          A track record of building real-world solutions and growing through
+          hands-on experience.
+        </p>
+      </div>
+      <div class="exp-list">
+        <div class="exp-card reveal">
+          <div class="exp-date">2023 – Present</div>
+          <div class="exp-title">Frontend Developer</div>
+          <div class="exp-company">CompuTech</div>
+          <p class="exp-desc">
+            Building responsive, performant web interfaces with a focus on clean
+            code, scalable UI components, and excellent user experience across
+            devices.
+          </p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-date">2023 – Present</div>
+          <div class="exp-title">Frontend Developer</div>
+          <div class="exp-company">CompuTech</div>
+          <p class="exp-desc">
+            Collaborating with cross-functional teams to develop design systems,
+            implement features, and maintain code quality standards.
+          </p>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-date">2022 – 2023</div>
+          <div class="exp-title">Attachee (IT Intern)</div>
+          <div class="exp-company">Kipchekwen CYDC</div>
+          <p class="exp-desc">
+            Gained hands-on experience in IT support, computer lab management,
+            and practical application of academic knowledge in a professional
+            environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="edu-header reveal">
+        <div class="section-eyebrow">Academic Background</div>
+        <h2 class="section-title">My <span>Education</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bx bxs-graduation"></i></div>
+          <div class="edu-date">2020 – 2024</div>
+          <div class="edu-degree">BSc Computer Science & IT</div>
+          <div class="edu-school">The East African University</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bx bx-code-block"></i></div>
+          <div class="edu-date">July – October 2023</div>
+          <div class="edu-degree">Web Development Bootcamp</div>
+          <div class="edu-school">Moringa School</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="bx bx-badge-check"></i></div>
+          <div class="edu-date">September 2024 – Present</div>
+          <div class="edu-degree">Junior Developer Certification</div>
+          <div class="edu-school">W3Schools</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="portfolio-header reveal">
+        <div class="section-eyebrow">Selected Work</div>
+        <h2 class="section-title">My <span>Projects</span></h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="project-card reveal">
+          <img src="images/work 1 levin book.png" alt="Levin Book Project" />
+          <div class="project-overlay">
+            <span class="project-tag">HTML5 · CSS3 · JavaScript</span>
+            <div class="project-name">Levin Book</div>
+            <p class="project-desc">
+              A modern five-star hotel booking website with smooth interactions
+              and responsive design.
+            </p>
+            <div class="project-links">
+              <a href="#"><i class="bx bx-link-external"></i> Preview</a>
+              <a href="#"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <img
+            src="images/work 3 golden gates hotel.png"
+            alt="Golden Gates Hotel"
+          />
+          <div class="project-overlay">
+            <span class="project-tag">HTML5 · CSS3 · JavaScript</span>
+            <div class="project-name">Golden Gates Hotel</div>
+            <p class="project-desc">
+              Premium hospitality web experience — elegant visuals and seamless
+              user journey.
+            </p>
+            <div class="project-links">
+              <a href="#"><i class="bx bx-link-external"></i> Preview</a>
+              <a href="#"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <img src="images/work 5 levin arts.png" alt="Levin Arts" />
+          <div class="project-overlay">
+            <span class="project-tag">HTML5 · CSS3 · JavaScript</span>
+            <div class="project-name">Levin Arts</div>
+            <p class="project-desc">
+              Creative portfolio showcase combining dynamic UI with artistic
+              visual presentation.
+            </p>
+            <div class="project-links">
+              <a href="#"><i class="bx bx-link-external"></i> Preview</a>
+              <a href="#"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <img src="images/work 2 hotel.png" alt="Hotel Project" />
+          <div class="project-overlay">
+            <span class="project-tag">HTML5 · CSS3 · JavaScript</span>
+            <div class="project-name">Boutique Hotel</div>
+            <p class="project-desc">
+              Boutique hotel site focused on visual storytelling and an
+              immersive guest experience.
+            </p>
+            <div class="project-links">
+              <a href="#"><i class="bx bx-link-external"></i> Preview</a>
+              <a href="#"><i class="bx bxl-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-header reveal">
+        <div class="section-eyebrow">What I Offer</div>
+        <h2 class="section-title">My <span>Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap"><i class="bx bx-code-alt"></i></div>
+          <div class="service-title">Web Development</div>
+          <p class="service-desc">
+            Fast, responsive, and accessible websites built from the ground up —
+            tailored precisely to your goals and brand.
+          </p>
+          <a href="#contact" class="service-arrow"
+            >Get started <i class="bx bx-right-arrow-alt"></i
+          ></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap"><i class="bx bx-palette"></i></div>
+          <div class="service-title">Web Design</div>
+          <p class="service-desc">
+            Clean, modern interfaces designed to convert visitors into users —
+            balancing aesthetics with usability.
+          </p>
+          <a href="#contact" class="service-arrow"
+            >Get started <i class="bx bx-right-arrow-alt"></i
+          ></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <i class="bx bxs-video-recording"></i>
+          </div>
+          <div class="service-title">Video Editing</div>
+          <p class="service-desc">
+            Professional editing for brand content, events, and social media —
+            polished, engaging, and on-message.
+          </p>
+          <a href="#contact" class="service-arrow"
+            >Get started <i class="bx bx-right-arrow-alt"></i
+          ></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap"><i class="bx bxs-camera"></i></div>
+          <div class="service-title">Photography</div>
+          <p class="service-desc">
+            Capturing moments with a creative eye — portraits, events, and
+            commercial photography that tells your story.
+          </p>
+          <a href="#contact" class="service-arrow"
+            >Get started <i class="bx bx-right-arrow-alt"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="contact-info reveal">
+          <div class="section-eyebrow">Get in Touch</div>
+          <h2 class="section-title">Let's work<br /><span>together</span></h2>
+          <p>
+            Have a project in mind? I'd love to hear about it. Send me a message
+            and let's create something great.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <i class="bx bx-envelope"></i>
+              <div>
+                <div class="detail-label">Email</div>
+                <div class="detail-value">levin@email.com</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="bx bx-phone"></i>
+              <div>
+                <div class="detail-label">Phone</div>
+                <div class="detail-value">+254 700 000 000</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="bx bx-map"></i>
+              <div>
+                <div class="detail-label">Location</div>
+                <div class="detail-value">Nairobi, Kenya</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href=""><i class="bx bxl-github"></i></a>
+            <a href=""><i class="bx bxl-linkedin"></i></a>
+            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href=""><i class="bx bxl-facebook"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="+254 700 000 000" />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Project inquiry" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              placeholder="Tell me about your project..."
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn-primary"
+            style="align-self: flex-start; cursor: pointer"
+          >
+            <i class="bx bx-send"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">LM<span>.</span></div>
+      <p>© 2025 Levin Mwange — Built with <span>♥</span></p>
+      <a href="#home" class="back-top"
+        ><i class="bx bx-up-arrow-alt"></i> Back to top</a
+      >
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
 </html>
